@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background-color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ui-sortable {
+  min-height: 80px;
+}
+
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+
+.btn-delete:hover{
+  cursor: pointer;
+}
+
+.board h1 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+.create-column {
+  display: block;
+  background-color: #16a085;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.create-column:hover {
+  background-color: #fff;
+  color: #16a085;
+  border-color: #16a085;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  order: 1;
+  min-width: 300px;
+  min-height: 50vh;
+  background-color: #545e5c;
+  margin-left: 8px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.column-add-card {
+  cursor: pointer;
+  display: block;
+  margin: 5px 8px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #16a085;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+}
+
+.column-add-card:hover {
+  background-color: #fff;
+  color: #16a085;
+  border-color: #16a085;
+}
+
+.column-title {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card {
+  display: block;
+  height: 40px;
+  font-size: 22px;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.card-list {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+
+.card-description {
+  margin: 2px 0;
+}
+
+.card-placeholder {
+  border: 2px solid lightgrey;
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.btn-delete:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
