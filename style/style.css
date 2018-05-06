@@ -4,7 +4,8 @@ body {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .ui-sortable {
@@ -53,13 +54,21 @@ body {
 }
 
 .column-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .column {
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   min-width: 300px;
   min-height: 50vh;
   background-color: #545e5c;
@@ -120,7 +129,6 @@ h2 {
 
 .card-placeholder {
   border: 2px solid lightgrey;
-  box-sizing: border-box;
   display: block;
   height: 60px;
   margin-bottom: 5px;
